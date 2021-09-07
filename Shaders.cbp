@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="DENGI" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Dengi" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++17" />
+					<Add option="-m64" />
+					<Add option="-g" />
+					<Add option="-DDENGI_STATIC" />
+					<Add directory="../lib ESM/libPNG" />
+					<Add directory="../lib ESM/zlib" />
+					<Add directory="../lib ESM/jpeg" />
+					<Add directory="../Shaders" />
+					<Add directory="include" />
+					<Add directory="D:/Program/MinGW/SFML x64/include" />
+					<Add directory="D:/Program/MinGW/glew x64/include" />
+					<Add directory="include/DENGI/Img" />
+					<Add directory="../lib ESM/giflib/include" />
+					<Add directory="C:/Program Files (x86)/OpenAL 1.1 SDK/include" />
+					<Add directory="../lib ESM/libogg/include" />
+					<Add directory="include/DENGI/GUI/" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="SFML_STATIC" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+					<Add option="-m64" />
+					<Add library="sfml-window-s-d" />
+					<Add library="sfml-system-s-d" />
+					<Add library="sfml-graphics-s-d" />
+					<Add library="winmm" />
+					<Add library="../../../Program/MinGW/glew x64/lib/libglew32.a" />
+					<Add library="opengl32" />
+					<Add library="gdi32" />
+					<Add library="freetype" />
+					<Add library="png" />
+					<Add library="jpeg" />
+					<Add library="z" />
+					<Add library="zstd" />
+					<Add library="glu32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="../lib ESM/giflib/bin/Release/libgif.a" />
+					<Add library="OpenAL32" />
+					<Add library="ogg" />
+					<Add directory="../lib ESM/libPNG/bin/x86_64" />
+					<Add directory="../lib ESM/zlib/bin/x86_64" />
+					<Add directory="../lib ESM/jpeg/bin/x86_64" />
+					<Add directory="D:/Program/MinGW/SFML x64/lib" />
+					<Add directory="D:/Program/MinGW/MinGW/x86_64-w64-mingw32/lib" />
+					<Add directory="C:/Program Files (x86)/OpenAL 1.1 SDK/libs/Win64" />
+					<Add directory="../lib ESM/libogg/bin/x86_64" />
+					<LinkerExe value="CppCompiler" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Dengi" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=gnu++17" />
+					<Add option="-std=c17" />
+					<Add option="-m64" />
+					<Add option="-DDENGI_STATIC" />
+					<Add directory="../lib ESM/libPNG" />
+					<Add directory="../lib ESM/zlib" />
+					<Add directory="../lib ESM/jpeg" />
+					<Add directory="../Shaders" />
+					<Add directory="include" />
+					<Add directory="D:/Program/MinGW/SFML x64/include" />
+					<Add directory="D:/Program/MinGW/glew x64/include" />
+					<Add directory="include/DENGI/Img" />
+					<Add directory="../lib ESM/giflib/include" />
+					<Add directory="include/DENGI/GUI/" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="SFML_STATIC" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+					<Add option="-m64" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-system-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="winmm" />
+					<Add library="opengl32" />
+					<Add library="gdi32" />
+					<Add library="D:/Program/MinGW/MinGW/lib/libfreetype.a" />
+					<Add library="jpeg" />
+					<Add library="png" />
+					<Add library="zlib" />
+					<Add library="glu32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="../lib ESM/giflib/bin/Release/libgif.a" />
+					<Add directory="../lib ESM/libPNG/bin/x86_64" />
+					<Add directory="../lib ESM/zlib/bin/x86_64" />
+					<Add directory="../lib ESM/jpeg/bin/x86_64" />
+					<Add directory="D:/Program/MinGW/SFML x64/lib" />
+					<Add directory="D:/Program/MinGW/MinGW/x86_64-w64-mingw32/lib" />
+					<LinkerExe value="CppCompiler" />
+				</Linker>
+			</Target>
+			<Target title="Win32">
+				<Option output="bin/Win32/Dengi" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Win32/" />
+				<Option type="0" />
+				<Option compiler="mingw_32" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=gnu++17" />
+					<Add option="-std=c17" />
+					<Add option="-m32" />
+					<Add option="-DDENGI_STATIC" />
+					<Add directory="../lib ESM/libPNG/include" />
+					<Add directory="../lib ESM/zlib/include" />
+					<Add directory="../lib ESM/jpeg" />
+					<Add directory="../Shaders" />
+					<Add directory="include" />
+					<Add directory="D:/Program/MinGW/SFML x32/include" />
+					<Add directory="D:/Program/MinGW/glew x32/include" />
+					<Add directory="include/DENGI/Img" />
+					<Add directory="../lib ESM/giflib/include" />
+					<Add directory="include/DENGI/GUI/" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="SFML_STATIC" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+					<Add option="-m32" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-system-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="winmm" />
+					<Add library="opengl32" />
+					<Add library="gdi32" />
+					<Add library="freetype" />
+					<Add library="png" />
+					<Add library="jpeg" />
+					<Add library="zlib" />
+					<Add library="glu32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="../lib ESM/giflib/bin/win32/libgif.a" />
+					<Add directory="../lib ESM/libPNG/bin/x86" />
+					<Add directory="../lib ESM/zlib/bin/x86" />
+					<Add directory="../lib ESM/jpeg/bin/x86" />
+					<Add directory="D:/Program/MinGW/SFML x32/lib" />
+					<Add directory="D:/Program/MinGW/mingw32/lib" />
+					<Add directory="D:/Program/MinGW/mingw32/i686-w64-mingw32/lib" />
+				</Linker>
+			</Target>
+			<Target title="Static 64">
+				<Option output="bin/Static 64/Dengi" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Static 64/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=gnu++17" />
+					<Add option="-std=c17" />
+					<Add option="-m32" />
+					<Add option="-DDENGI_STATIC" />
+					<Add directory="../lib ESM/libPNG" />
+					<Add directory="../lib ESM/zlib" />
+					<Add directory="../lib ESM/jpeg" />
+					<Add directory="../Shaders" />
+					<Add directory="include" />
+					<Add directory="D:/Program/MinGW/SFML x64/include" />
+					<Add directory="D:/Program/MinGW/glew x64/include" />
+					<Add directory="include/DENGI/Img" />
+					<Add directory="../lib ESM/giflib/include" />
+					<Add directory="include/DENGI/GUI/" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="SFML_STATIC" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+					<Add option="-m32" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-system-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="winmm" />
+					<Add library="opengl32" />
+					<Add library="gdi32" />
+					<Add library="D:/Program/MinGW/MinGW/lib/libfreetype.a" />
+					<Add library="jpeg" />
+					<Add library="png" />
+					<Add library="zlib" />
+					<Add library="glu32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="../lib ESM/giflib/bin/Release/libgif.a" />
+					<Add directory="../lib ESM/libPNG/bin/x86_64" />
+					<Add directory="../lib ESM/zlib/bin/x86_64" />
+					<Add directory="../lib ESM/jpeg/bin/x86_64" />
+					<Add directory="D:/Program/MinGW/SFML x64/lib" />
+					<Add directory="D:/Program/MinGW/MinGW/x86_64-w64-mingw32/lib" />
+					<LinkerExe value="CppCompiler" />
+				</Linker>
+			</Target>
+			<Target title="Static 32">
+				<Option output="bin/Static 32/Dengi" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Static 32/" />
+				<Option type="2" />
+				<Option compiler="mingw_32" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=gnu++17" />
+					<Add option="-std=c17" />
+					<Add option="-m32" />
+					<Add option="-DDENGI_STATIC" />
+					<Add directory="../lib ESM/libPNG/include" />
+					<Add directory="../lib ESM/zlib/include" />
+					<Add directory="../lib ESM/jpeg" />
+					<Add directory="../Shaders" />
+					<Add directory="include" />
+					<Add directory="D:/Program/MinGW/SFML x32/include" />
+					<Add directory="D:/Program/MinGW/glew x32/include" />
+					<Add directory="include/DENGI/Img" />
+					<Add directory="../lib ESM/giflib/include" />
+					<Add directory="include/DENGI/GUI/" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="SFML_STATIC" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+					<Add option="-m32" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-system-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="winmm" />
+					<Add library="opengl32" />
+					<Add library="gdi32" />
+					<Add library="freetype" />
+					<Add library="png" />
+					<Add library="jpeg" />
+					<Add library="zlib" />
+					<Add library="glu32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="../lib ESM/giflib/bin/win32/libgif.a" />
+					<Add directory="../lib ESM/libPNG/bin/x86" />
+					<Add directory="../lib ESM/zlib/bin/x86" />
+					<Add directory="../lib ESM/jpeg/bin/x86" />
+					<Add directory="D:/Program/MinGW/SFML x32/lib" />
+					<Add directory="D:/Program/MinGW/mingw32/lib" />
+					<Add directory="D:/Program/MinGW/mingw32/i686-w64-mingw32/lib" />
+					<LinkerExe value="CppCompiler" />
+				</Linker>
+			</Target>
+			<Target title="DLL 64">
+				<Option output="bin/DLL64/Dengi" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/DLL64/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=gnu++17" />
+					<Add option="-std=c17" />
+					<Add option="-m64" />
+					<Add option="-DDENGI_BUILD" />
+					<Add directory="../lib ESM/libPNG" />
+					<Add directory="../lib ESM/zlib" />
+					<Add directory="../lib ESM/jpeg" />
+					<Add directory="../Shaders" />
+					<Add directory="include" />
+					<Add directory="D:/Program/MinGW/SFML x64/include" />
+					<Add directory="D:/Program/MinGW/glew x64/include" />
+					<Add directory="include/DENGI/Img" />
+					<Add directory="../lib ESM/giflib/include" />
+					<Add directory="include/DENGI/GUI/" />
+					<Add directory="C:/Program Files (x86)/OpenAL 1.1 SDK/include" />
+					<Add directory="../lib ESM/libogg/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="SFML_STATIC" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+					<Add option="-m64" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-system-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="winmm" />
+					<Add library="opengl32" />
+					<Add library="gdi32" />
+					<Add library="D:/Program/MinGW/MinGW/lib/libfreetype.a" />
+					<Add library="jpeg" />
+					<Add library="png" />
+					<Add library="zlib" />
+					<Add library="glu32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="../lib ESM/giflib/bin/Release/libgif.a" />
+					<Add library="OpenAL32" />
+					<Add library="ogg" />
+					<Add directory="../lib ESM/libPNG/bin/x86_64" />
+					<Add directory="../lib ESM/zlib/bin/x86_64" />
+					<Add directory="../lib ESM/jpeg/bin/x86_64" />
+					<Add directory="D:/Program/MinGW/SFML x64/lib" />
+					<Add directory="D:/Program/MinGW/MinGW/x86_64-w64-mingw32/lib" />
+					<Add directory="C:/Program Files (x86)/OpenAL 1.1 SDK/libs/Win64" />
+					<Add directory="../lib ESM/libogg/bin/x86_64" />
+				</Linker>
+			</Target>
+			<Target title="DLL 32">
+				<Option output="bin/DLL32/Dengi" imp_lib="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).a" def_file="$(TARGET_OUTPUT_DIR)$(TARGET_OUTPUT_BASENAME).def" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/DLL32/" />
+				<Option type="3" />
+				<Option compiler="mingw_32" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=gnu++17" />
+					<Add option="-std=c17" />
+					<Add option="-m32" />
+					<Add option="-DDENGI_BUILD" />
+					<Add directory="../lib ESM/libPNG/include" />
+					<Add directory="../lib ESM/zlib/include" />
+					<Add directory="../lib ESM/jpeg" />
+					<Add directory="../Shaders" />
+					<Add directory="include" />
+					<Add directory="D:/Program/MinGW/SFML x32/include" />
+					<Add directory="D:/Program/MinGW/glew x32/include" />
+					<Add directory="include/DENGI/Img" />
+					<Add directory="../lib ESM/giflib/include" />
+					<Add directory="include/DENGI/GUI/" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="SFML_STATIC" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+					<Add option="-m32" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-system-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="winmm" />
+					<Add library="opengl32" />
+					<Add library="gdi32" />
+					<Add library="freetype" />
+					<Add library="png" />
+					<Add library="jpeg" />
+					<Add library="zlib" />
+					<Add library="glu32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="../lib ESM/giflib/bin/win32/libgif.a" />
+					<Add directory="../lib ESM/libPNG/bin/x86" />
+					<Add directory="../lib ESM/zlib/bin/x86" />
+					<Add directory="../lib ESM/jpeg/bin/x86" />
+					<Add directory="D:/Program/MinGW/SFML x32/lib" />
+					<Add directory="D:/Program/MinGW/mingw32/lib" />
+					<Add directory="D:/Program/MinGW/mingw32/i686-w64-mingw32/lib" />
+					<LinkerExe value="CppCompiler" />
+				</Linker>
+			</Target>
+			<Target title="PRUEBA">
+				<Option output="bin/PRUEBA/Dengi" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/PRUEBA/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=gnu++17" />
+					<Add option="-std=c17" />
+					<Add option="-m64" />
+					<Add option="-DDENGI_STATIC" />
+					<Add directory="../Shaders" />
+					<Add directory="include" />
+					<Add directory="D:/Program/MinGW/SFML x64/include" />
+					<Add directory="D:/Program/MinGW/glew x64/include" />
+					<Add directory="include/DENGI/Img" />
+					<Add directory="../lib ESM/giflib/include" />
+					<Add directory="include/DENGI/GUI/" />
+					<Add directory="C:/Program Files (x86)/OpenAL 1.1 SDK/include" />
+					<Add directory="../lib ESM/libogg/include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="SFML_STATIC" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+					<Add option="-m64" />
+					<Add library="bin/DLL64/libDengi.a" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-system-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="winmm" />
+					<Add library="opengl32" />
+					<Add library="gdi32" />
+					<Add library="user32" />
+					<Add library="kernel32" />
+					<Add library="OpenAL32" />
+					<Add library="ogg" />
+					<Add directory="D:/Program/MinGW/SFML x64/lib" />
+					<Add directory="D:/Program/MinGW/MinGW/lib" />
+					<Add directory="D:/Program/MinGW/MinGW/x86_64-w64-mingw32/lib" />
+					<Add directory="C:/Program Files (x86)/OpenAL 1.1 SDK/libs/Win64" />
+					<Add directory="../lib ESM/libogg/bin/x86_64" />
+					<LinkerExe value="CppCompiler" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="D:/Program/MinGW/MinGW/include/freetype2" />
+			<Add directory="../lib ESM/libPNG/include" />
+			<Add directory="../lib ESM/zlib/include" />
+			<Add directory="../lib ESM/jpeg/include" />
+		</Compiler>
+		<Unit filename="glew.c">
+			<Option compilerVar="CC" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+			<Option target="PRUEBA" />
+		</Unit>
+		<Unit filename="include/DENGI/Background.h" />
+		<Unit filename="include/DENGI/Cam.h" />
+		<Unit filename="include/DENGI/Color.h" />
+		<Unit filename="include/DENGI/Font.h" />
+		<Unit filename="include/DENGI/Fragment.h" />
+		<Unit filename="include/DENGI/GUI.h" />
+		<Unit filename="include/DENGI/GUI/WinStyle.h" />
+		<Unit filename="include/DENGI/GUI/Window.h" />
+		<Unit filename="include/DENGI/GlyfoN.h" />
+		<Unit filename="include/DENGI/Gradient.h" />
+		<Unit filename="include/DENGI/Image.h" />
+		<Unit filename="include/DENGI/Img/Img_bmp.h" />
+		<Unit filename="include/DENGI/Img/Img_gif.h" />
+		<Unit filename="include/DENGI/Img/Img_jpeg.h" />
+		<Unit filename="include/DENGI/Img/Img_png.h" />
+		<Unit filename="include/DENGI/Material.h" />
+		<Unit filename="include/DENGI/Matrix.h" />
+		<Unit filename="include/DENGI/ModelWavefront.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+			<Option target="PRUEBA" />
+		</Unit>
+		<Unit filename="include/DENGI/Picture.h" />
+		<Unit filename="include/DENGI/Sound/Sound.h" />
+		<Unit filename="include/DENGI/Sound/Sound_ogg.h" />
+		<Unit filename="include/DENGI/Sound/Sound_wav.h" />
+		<Unit filename="include/DENGI/Text.h" />
+		<Unit filename="include/DENGI/dengi.h" />
+		<Unit filename="include/DENGI/kernel.h" />
+		<Unit filename="main.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="PRUEBA" />
+		</Unit>
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="PRUEBA" />
+		</Unit>
+		<Unit filename="src/Background.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+		</Unit>
+		<Unit filename="src/Cam.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+		</Unit>
+		<Unit filename="src/Color.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+		</Unit>
+		<Unit filename="src/Font.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+		</Unit>
+		<Unit filename="src/GUI.cpp" />
+		<Unit filename="src/GUI/WinStyle.cpp" />
+		<Unit filename="src/GUI/Window.cpp" />
+		<Unit filename="src/Gradient.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+		</Unit>
+		<Unit filename="src/IMG/Img_bmp.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+		</Unit>
+		<Unit filename="src/IMG/Img_gif.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+		</Unit>
+		<Unit filename="src/IMG/Img_jpeg.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+		</Unit>
+		<Unit filename="src/IMG/Img_png.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+		</Unit>
+		<Unit filename="src/Image.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+		</Unit>
+		<Unit filename="src/Material.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+		</Unit>
+		<Unit filename="src/Matrix.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+		</Unit>
+		<Unit filename="src/ModelWavefront.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+			<Option target="PRUEBA" />
+		</Unit>
+		<Unit filename="src/Picture.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+		</Unit>
+		<Unit filename="src/Sound/Sound_WAV.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+		</Unit>
+		<Unit filename="src/Sound/Sound_ogg.cpp" />
+		<Unit filename="src/Text.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+		</Unit>
+		<Unit filename="src/dengi.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="Win32" />
+			<Option target="Static 64" />
+			<Option target="Static 32" />
+			<Option target="DLL 64" />
+			<Option target="DLL 32" />
+		</Unit>
+		<Extensions>
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project output_language="Spanish" />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
